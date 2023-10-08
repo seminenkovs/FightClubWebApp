@@ -1,2 +1,2 @@
-ASP.Net Core 7
-for images used clodinary service
+#ASP.Net Core 7
+#for images used cloudinary service
