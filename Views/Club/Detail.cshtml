@@ -1,0 +1,40 @@
+﻿@model Club
+@using FightClubWebApp.Data.Enum
+@{
+    ViewData["Title"] = "Club Details";
+}
+
+
+<div class="main-container">
+      
+    <section class="bg-white space-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-sm-0">
+                    <img alt="Image" src="@Model.Image" class="rounded img-fluid" />
+                </div>
+                <!--end of col-->
+                <div class="col-lg-4 d-flex flex-column justify-content-between mr-auto ml-auto">
+                    <div>
+                        <h1 class="mb-2">@Model.Title</h1>
+                        <h2 class="lead mb-3">@Model.Address?.Street</h2>
+                        <h2 class="lead mb-3">@Model.Address?.City, @Model.Address?.State</h2>
+                        <div>
+                            <span class="badge badge-secondary mr-3">@Model.ClubCategory</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn-group mb-2">
+                            <button type="button" class="btn btn-success btn-lg">Join Club</button>
+                        </div>
+                    </div>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+
+</div>>
